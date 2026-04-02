@@ -1,0 +1,12 @@
+# AI API 配置模板
+# 请复制此文件为 ai_config.toml 并填入真实信息
+
+[api]
+provider = "openai"  # OpenAI 兼容格式
+api_key = "YOUR_API_KEY_HERE"  # 替换为你的 API Key
+base_url = "https://api.siliconflow.cn/v1"  # SiliconFlow 或其他兼容 API
+model = "deepseek-ai/DeepSeek-V3"  # 或其他模型
+
+[limits]
+max_tokens = 500
+temperature = 0.9
