@@ -98,7 +98,7 @@ def git_commit_and_push(changes):
                               capture_output=True, text=True)
         if "7890" not in result.stdout:
             print("  ⚙️ 自动配置 Git 代理...")
-            subprocess.run(["git", "config", "--global", "http.proxy", "http://127.0.0.1:7890"],
+            subprocess.run(["git", "config", "--global", "http.proxy", "http://127.0.0.1:10808"],
                          capture_output=True)
     except:
         pass
