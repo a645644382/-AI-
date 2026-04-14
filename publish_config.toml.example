@@ -1,0 +1,29 @@
+# 小满公众号发布配置
+# 请复制此文件为 publish_config.toml 并填入真实信息
+
+# ========== 腾讯云 COS 配置 ==========
+[cos]
+secret_id = "YOUR_COS_SECRET_ID"
+secret_key = "YOUR_COS_SECRET_KEY"
+bucket = "your-bucket-name-1259145203"
+region = "ap-chengdu"
+
+# ========== 腾讯云 SCF 配置 ==========
+[scf]
+url = "http://xxxxxx.ap-chengdu.tencentscf.com"
+
+# ========== 本地路径配置 ==========
+[paths]
+# 素材根目录（存放批次、归档、状态文件）
+material_dir = "xiaoman_materials"
+
+# AI 精选照片目录（可选，留空则只用批次目录）
+selected_photos_dir = ""
+
+# ai_config.toml 路径（AI 文案生成配置）
+ai_config = "ai_config.toml"
+
+# ========== 发布参数 ==========
+[publish]
+# 每篇文章选几张照片
+photos_per_article = 4

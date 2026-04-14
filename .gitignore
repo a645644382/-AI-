@@ -1,50 +1,20 @@
+# 敏感配置
+publish_config.toml
+ai_config.toml
+
 # Python
 __pycache__/
 *.pyc
 *.pyo
-*.pyd
-.Python
-venv/
-env/
-*.egg-info/
-dist/
-build/
 
-# 配置（包含敏感信息）
-ai_config.toml
-*.secret
-*.env
+# 临时文件
+cover_temp.jpg
+state.json
+draft_snapshot.json
 
-# 照片和媒体
-photos/
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.mp4
-*.mov
-*.avi
-
-# 工作目录
-.workbuddy/
-node_modules/
-
-# 日志和临时文件
-*.log
-*.tmp
-*.swp
-*~
-
-# JSON 数据文件
-*.json
-!package.json
+# 素材目录
+xiaoman_materials/
 
 # IDE
 .vscode/
 .idea/
-*.sublime-*
-
-# 草稿快照
-draft_snapshot.json
-monitor_log.json
-used_photos.json
